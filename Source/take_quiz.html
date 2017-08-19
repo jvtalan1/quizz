@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="../CSS/body.css">
+<link rel="stylesheet" href="../CSS/take_quiz.css">
+
+<title>Take a Quiz</title>
+</head>
+
+<body>
+
+<div id="wrapper">
+
+	<div id="header">
+		<div class="header">
+			<a class="header" href="../index.html"><img class="header" src="../CSS/logo.png" height="50px" width="50px"></a>
+			<h2 class="header">Take A Quiz</h2>
+		</div>
+	</div>
+
+	<div id="banner">
+		<div class="banner">
+		</div>
+		<div class="navbar-container">
+			<ul class="navbar">
+				<li><a href="../index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+				<li><a href="famous_fictional_places.html">Famous Fictional Places</a></li>
+				<li class="active"><a href="take_quiz.html">Take A Quiz</a></li>
+				<li><a href="about.html">About</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="main">
+
+			<div id="quiz-container">
+				<div class="confirm-ready">
+					<h4 id="confirm-statement">This quiz consists of 10 questions each with 5 choices to choose from. Questions may come from different sources like literature, movies, and tv series. There is no time limit. Good luck!</h4>
+					<h2 id="confirm-ready">Are you ready to take the quiz?</h2>
+					<div style="width:50%;height: 100px; float: left">
+						<button type="button" class="confirm-ready" id="btn-think"><img src="../CSS/think.png" height="150px" width="150px"></button>
+						<h4 style="text-align: center; font-weight: bold;font-family: varela;">Let Me Think</h4>
+					</div>
+					<div style="width:50%;height: 100px; float: right">
+						<button type="button" class="confirm-ready" id="btn-thumbsup" onclick="proceed(1)"><img src="../CSS/thumbs-up.png" height="150px" width="150px"></button>
+						<h4 style="text-align: center; font-weight: bold;font-family: varela;">Proceed</h4>
+					</div>
+				</div>
+				<div class="quiz-item">
+					<img class="quiz-img" src="../CSS/rivendell.jpg" height="auto" width="100%">
+					<p class="qtn"><br><b>Question 1:</b><br>This place is an Elven realm in Middle Earth, a fictional world created by J.R.R. Tolkien in his <i>The Lord of the Rings</i> books, and is home to Elrond. What is it called?</p>
+					<div class="choices">
+						<button type="button" class="choices" onclick="inputAns(this)" value="0">Riverlands</button>
+						<button type="button" class="choices" onclick="inputAns(this)" value="1">Rivendell</button>
+						<button type="button" class="choices" onclick="inputAns(this)" value="0">Riverdell</button>
+						<button type="button" class="choices" onclick="inputAns(this)" value="0">Rivendale</button>
+						<button type="button" class="choices" onclick="inputAns(this)" value="0">Chippendale</button>
+					</div>
+				</div>
+				<div class="quiz-item">
+					<img class="quiz-img" src="../CSS/theburrow.jpg" height="auto" width="100%">
+					<p class="qtn"><br><b>Question 2:</b><br>This place from the <i>Harry Potter</i> universe is home to the Weasley family. Located on the outskirts of Ottery St Catchpole in Devon, England, it was a thoroughly magical dwelling that became a second home to Harry Potter.</p>
+					<div class="choices">
+						<button type="button" class="choices" onclick="inputAns(this)" value="0">The Barlow</button>
+						<button type="button" class="choices" onclick="inputAns(this)" value="0">The Barrow</button>
+						<button type="button" class="choices" onclick="inputAns(this)" value="0">The Bureau</button>
+						<button type="button" class="choices" onclick="inputAns(this)" value="1">The Burrow</button>
+						<button type="button" class="choices" onclick="inputAns(this)" value="0">The Borrow</button>
+					</div>
+				</div>
+				<div class="quiz-item">
+					<img class="quiz-img" src="../CSS/conchstreet.jpg" height="auto" width="100%">
+					<p class="qtn"><br><b>Question 3:</b><br>This is the residence of Squidward Tentacles, which he took pride after winning the title of House Fancy Prince in a competition.</p>
+					<div class="choices">
+						<button type="button" class="choices" onclick="inputAns(this)" value="1">122 Conch Street</button>
+						<button type="button" class="choices" onclick="inputAns(this)" value="0">123 Conch Drive</button>
+						<button type="button" class="choices" onclick="inputAns(this)" value="0">121 Crunch Drive</button>
+						<button type="button" class="choices" onclick="inputAns(this)" value="0">121 Punch Drive</button>
+						<button type="button" class="choices" onclick="inputAns(this)" value="0">122 Couch Street</button>
+					</div>
+				</div>
+				<div class="quiz-item">
+					<img class="quiz-img" src="../CSS/crims.jpg" height="auto" width="100%">
+					<p class="qtn"><br><b>Question 4:</b><br>It is the castle of Iracebeth, the Red Queen, and also the residence of the Knave of Hearts, the Bandersnatch, and the Jubjub bird. It lies within a place called Salazen Grum.</p>
+					<div class="choices">
+						<button type="button" class="choices" onclick="inputAns(this)" value="0">Marmoreal</button>
+						<button type="button" class="choices" onclick="inputAns(this)" value="0">Red Queen's Court</button>
+						<button type="button" class="choices" onclick="inputAns(this)" value="0">Hamish Ascot</button>
+						<button type="button" class="choices" onclick="inputAns(this)" value="0">Ascot Manor</button>
+						<button type="button" class="choices" onclick="inputAns(this)" value="1">Crims</button>
+					</div>
+				</div>
+				<div class="quiz-item">
+					<img class="quiz-img" src="../CSS/dragonstone.jpg" height="auto" width="100%">
+					<p class="qtn"><br><b>Question 5:</b><br>Identify the name of this castle.</p>
+					<div class="choices">
+						<button type="button" class="choices" onclick="inputAns(this)" value="0">Dover Castle</button>
+						<button type="button" class="choices" onclick="inputAns(this)" value="0">Moat Cailin</button>
+						<button type="button" class="choices" onclick="inputAns(this)" value="1">Dragonstone</button>
+						<button type="button" class="choices" onclick="inputAns(this)" value="0">Pyke</button>
+						<button type="button" class="choices" onclick="inputAns(this)" value="0">Neuschwanstein</button>
+					</div>
+				</div>
+				<div class="quiz-item">
+					<img class="quiz-img" src="../CSS/centralperk.png" height="auto" width="100%">
+					<p class="qtn"><br><b>Question 6:</b><br>This couch is from what coffee shop?</p>
+					<div class="choices">
+						<button type="button" class="choices" onclick="inputAns(this)" value="0">Cafe Nervosa</button>
+						<button type="button" class="choices" onclick="inputAns(this)" value="1">Central Perk</button>
+						<button type="button" class="choices" onclick="inputAns(this)" value="0">MacLaren's Pub</button>
+						<button type="button" class="choices" onclick="inputAns(this)" value="0">Rear Window Brew</button>
+						<button type="button" class="choices" onclick="inputAns(this)" value="0">Luke's Diner</button>
+					</div>
+				</div>
+				<div class="quiz-item">
+					<img class="quiz-img" src="../CSS/coruscant.png" height="auto" width="100%">
+					<p class="qtn"><br><b>Question 7:</b><br>At various times, this planet became the capital of the Old Republic, the Galactic Empire, the New Republic, the Yuuzhan Vong Empire and the Galactic Alliance. Its hyperspace coordinates are (0,0,0), thus becoming the navigational center of the galaxy.</p>
+					<div class="choices">
+						<button type="button" class="choices" onclick="inputAns(this)" value="0">Tatooine</button>
+						<button type="button" class="choices" onclick="inputAns(this)" value="1">Coruscant</button>
+						<button type="button" class="choices" onclick="inputAns(this)" value="0">Naboo</button>
+						<button type="button" class="choices" onclick="inputAns(this)" value="0">Alderaan</button>
+						<button type="button" class="choices" onclick="inputAns(this)" value="0">Jakku</button>
+					</div>
+				</div>
+				<div class="quiz-item">
+					<img class="quiz-img" src="../CSS/sunnydale.jpg" height="auto" width="100%">
+					<p class="qtn"><br><b>Question 8:</b><br>It is the fictional setting for a famous U.S. television drama.  It is located on a <i>Hellmouth</i>, a portal between <q>this reality and the next</q>, and convergence point of mystical energies. Despite being on the site of a Hellmouth, most students and faculty members continued with their lives, living in ignorance of the supernatural forces that cursed their town. One of its students is named Buffy Summers.</p>
+					<div class="choices">
+						<button type="button" class="choices" onclick="inputAns(this)" value="1">Sunnydale High School</button>
+						<button type="button" class="choices" onclick="inputAns(this)" value="0">Rydell High School</button>
+						<button type="button" class="choices" onclick="inputAns(this)" value="0">Bayside High School</button>
+						<button type="button" class="choices" onclick="inputAns(this)" value="0">North Shore High School</button>
+						<button type="button" class="choices" onclick="inputAns(this)" value="0">Xavier's School for Gifted Youngsters</button>
+					</div>
+				</div>
+				<div class="quiz-item">
+					<img class="quiz-img" src="../CSS/asgard.png" height="auto" width="100%">
+					<p class="qtn"><br><b>Question 9:</b><br>This place is a small planetary body that serves as home to the Norse gods such as Thor, and their ruler, Odin. It exists in another dimensional plane and has one permanent portal and that is Bifrost, the Rainbow Bridge. That portal leads to Midgard, but it has been shattered making it difficult to travel between the dimensions.</p>
+					<div class="choices">
+						<button type="button" class="choices" onclick="inputAns(this)" value="0">Gulmira</button>
+						<button type="button" class="choices" onclick="inputAns(this)" value="1">Asgard</button>
+						<button type="button" class="choices" onclick="inputAns(this)" value="0">Latveria</button>
+						<button type="button" class="choices" onclick="inputAns(this)" value="0">Olympus</button>
+						<button type="button" class="choices" onclick="inputAns(this)" value="0">Madripoor</button>
+					</div>
+				</div>
+				<div class="quiz-item">
+					<img class="quiz-img" src="../CSS/elysium.jpg" height="auto" width="100%">
+					<p class="qtn"><br><b>Question 10:</b><br>A gigantic space habitat located on Earth's orbit where wealthy people reside, it is technologically advanced with some of its technology including Med-Bays: medical machines that can cure all diseases, reverse the aging process, and regenerate new body parts. What is it called?</p>
+					<div class="choices">
+						<button type="button" class="choices" onclick="inputAns(this)" value="0">Armistice Station</button>
+						<button type="button" class="choices" onclick="inputAns(this)" value="0">Exodus</button>
+						<button type="button" class="choices" onclick="inputAns(this)" value="1">Elysium</button>
+						<button type="button" class="choices" onclick="inputAns(this)" value="0">Ring Shepherd</button>
+						<button type="button" class="choices" onclick="inputAns(this)" value="0">Second Earth</button>
+					</div>
+				</div>
+				<div class="final-confirm">
+					<div style="height: 300px; width: 100%; overflow: hidden">
+						<section id="photos">
+							<img src="../CSS/rivendell.jpg" height="auto" width="100%">
+							<img src="../CSS/theburrow.jpg" height="auto" width="100%">
+							<img src="../CSS/122conchstreet.jpg" height="auto" width="100%">
+							<img src="../CSS/coruscant.png" height="auto" width="100%">
+							<img src="../CSS/crims.jpg" height="auto" width="100%">
+							<img src="../CSS/centralperk.png" height="auto" width="100%">
+							<img src="../CSS/dragonstone.jpg" height="auto" width="100%">
+							<img src="../CSS/sunnydale.jpg" height="auto" width="100%">
+							<img src="../CSS/elysium.jpg" height="330px" width="550px">
+							<img src="../CSS/asgard.png" height="auto" width="100%">
+							<img src="../CSS/crims.jpg" height="auto" width="100%">
+							<img src="../CSS/centralperk.png" height="auto" width="100%">
+							<img src="../CSS/rivendell.jpg" height="auto" width="100%">
+							<img src="../CSS/coruscant.png" height="auto" width="100%">
+						</section>
+					</div>
+					<h2 style="text-align: center;">That's it. You have reached the end of this quiz.</h2>
+					<div class="choices">
+						<button type="button" class="choices" onclick="retake()">Retake The Quiz</button>
+						<button type="button" class="choices" onclick="showResults()">Show My Results</button>
+					</div>
+				</div>
+				<div class="results">
+					<h2 id="results">Results:</h2>
+				</div>
+
+			<div class="msg">
+				<h3 id="correct" class="msg" style="display: none;font-family: varela;">You got it right!</h3>
+				<h3 id="wrong" class="msg" style="display: none;font-family: varela;">Sorry! That's not the correct answer.</h3>
+			</div>
+			<div id="nav-button">
+				<button id="nextButton" type="button" onclick="skip(1)">Next Question</button>
+			</div>
+			<div id="quiz-progress" class="progress" style="width: 100%; height: 20px; margin-bottom: 80px;">
+				<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="" aria-valuemin="0" aria-valuemax="100" style="width:0"><span id="span"></span></div>
+			</div>
+
+			</div>
+		
+	</div>
+
+	<div class="modal fade" id="confirm-skip" role="dialog">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title"><b>You have not answered the question.</b></h4>
+				</div>
+				<div class="modal-body">
+					<p>If you skip this question, your answer will be considered incorrect.</p>
+				</div>
+				<div class="modal-footer">
+					<button id="modal-close" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button id="modal-skip" type="button" class="btn btn-default" data-dismiss="modal" onclick="nextItem(1)">Skip Question</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="footer">
+	</div>
+
+</div>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+
+</html>

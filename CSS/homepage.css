@@ -1,0 +1,63 @@
+/*
+Main Homepage
+*/
+
+#container {
+ 	column-count: 3;
+ 	column-gap: 0px;
+ 	display: flex;
+}
+
+div.content {
+	width: 33.33%;
+	height: auto;
+	background-color: #FFFFFF;
+	padding: 10px;
+	overflow: hidden;
+}
+
+.content {
+	font-family: varela;
+	color: #333333;
+}
+
+#content-left {
+	background-color: #FFFFFF;
+}
+
+#content-left:hover{
+	background: #272822;
+	cursor: pointer;
+	color: #FFFFFF;
+}
+
+#content-mid {
+	background-image: url('../CSS/gradientlight3.jpg');
+	background-position:center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#content-mid:hover{
+	background: #272822;
+	cursor: pointer;
+	color: #FFFFFF;
+}
+
+#content-right {
+	background-color: #FFFFFF;
+}
+
+#content-right:hover{
+	background: #272822;
+	cursor: pointer;
+	color: #FFFFFF;
+}
+
+.content img {
+	max-width: 100%;
+	height: auto;
+	width: auto;
+	float: right;
+}

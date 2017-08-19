@@ -1,0 +1,134 @@
+body {
+	background-image: url('../CSS/gradientlight2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	margin: 0px;
+}
+
+#wrapper {
+	min-height: 100%;
+	position: relative;
+}
+
+#header {
+	background-color: #2C484C;
+	height: 70px;
+	width: 100%;
+	min-width: 1000px;
+	position: fixed;
+	z-index: 100;
+}
+
+div.header {
+	width: 80%;
+	height: 70px;
+	margin: auto;
+}
+
+img.header {
+	height: 45px;
+	width: 45px;
+	margin-top: 13px;
+	float: left;
+}
+
+h2.header {
+	font-family: varela;
+	float: left;
+	color: #FFFFFF;
+	margin-left: 10px;
+}
+
+#banner {
+	padding-top: 80px;
+	padding-bottom: 299px;
+	margin: auto;
+	height: 345px;
+	width: 80%;
+	min-width: 1000px;
+}
+
+div.banner {
+	height: 236px;
+	width: 100%;
+	background-image: url('../CSS/banner4.jpg');
+	background-position: center;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	box-shadow: 0px 0px 10px 3px #333333;
+}
+
+/* Navigation Bars */
+
+div.navbar-container {
+	background-color: #2C484C;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+ul.navbar {
+	list-style-type: none;
+	padding: 0px;
+	overflow: hidden;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+
+ul.navbar li {
+	float: left;
+}
+
+ul.navbar li a {
+	color: #FFFFFF;
+	font-family: varela;
+	font-size: 120%;
+	font-weight: bolder;
+	display: block;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+ul.navbar li a:hover {
+    background-color: #C7A932;
+    text-decoration: none;
+    color: #171814;
+}
+
+ul.navbar li.active {
+	background-color: #272822;
+}
+
+ul.navbar li.active a:hover {
+	background-color: #44CD87;
+}
+
+#main {
+	background-color: #333333;
+	min-height: 600px;
+	height: auto;
+	overflow: auto;
+	width: 80%;
+	min-width: 1000px;
+	margin: auto;
+	padding-bottom: 40px;
+}
+
+#footer {
+	background-color: #2C484C;
+	height: 40px;
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+
+@font-face {
+ 	font-family: varela;
+	src: url(../CSS/VarelaRound-Regular.ttf);
+}

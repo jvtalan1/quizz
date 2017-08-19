@@ -1,0 +1,53 @@
+/*
+About Page Content Styling
+*/
+
+}
+div.content {
+	background-color: #FFFFFF;
+	width: 100%;
+	min-height: 600px;
+	height: auto;
+	overflow: auto;
+	padding: 1000px;
+}
+
+input[type=text], select {
+	width: 100%;
+	padding: 6px 12px;
+	margin: 8px 0;
+	display: block;
+	border: 1px solid #CCCCCC;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+#message {
+	width: 100%;
+	padding: 6px 12px;
+	display: block;
+	height: 200px;
+	border: 1px solid #CCCCCC;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-bottom: 10px;
+}
+
+#about-left {
+	width: 55%;
+	height: auto;
+	float: left;
+	padding-left: 30px;
+	padding-top: 30px;
+}
+
+#about-right {
+	width: 40%;
+	height: auto;
+	float: right;
+	padding-right: 30px;
+	padding-top: 30px;
+}
+
+
+

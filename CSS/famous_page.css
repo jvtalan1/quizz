@@ -1,0 +1,78 @@
+/*
+Famous Places Page Content Styling
+*/
+
+div.content-left {
+	background-color: #FFFFFF;
+	width: 64%;
+	min-height: 600px;
+	height: auto;
+	overflow: auto;
+	padding: 30px;
+	float: left;
+	background-image: url('../CSS/gradientlight3.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+h2.content-left {
+	font-family: varela;
+	font-weight: bold;
+}
+
+div.content-right {
+	background-color: #FFFFFF;
+	min-height: 600px;
+	height: auto;
+	overflow: auto;
+	width: 36%;
+	margin-left: 0px;
+	padding: 30px;
+	float: right;
+}
+
+img.content-right {
+	float: right;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+/*
+Image effect on hover
+*/
+
+.img-con-fam {
+	width: 60%;
+	height: auto;
+}
+
+.hovereffect {
+	width: 100%;
+	height: 100%;
+	margin-right: 10px;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+}
+
+.hovereffect .overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	transition: all 0.4s cubic-bezier(0.88,-0.99, 0, 1.81);
+}
+
+.hovereffect img {
+	display: block;
+ 	position: relative;
+	transition: all 0.4s cubic-bezier(0.88,-0.99, 0, 1.81);
+}
+
+.hovereffect:hover img {
+	transform: scale(1.2);
+}
